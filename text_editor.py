@@ -1,5 +1,5 @@
-from Tkinter import *
-from  tkFileDialog import *
+from tkinter import *
+#from  tkFileDialog import *
 
 filename = None
 
@@ -51,11 +51,11 @@ filemenu.add_separator()
 filemenu.add_command(label="Quit" , command=root.quit)
 menubar.add_cascade(label = "File", menu = filemenu)
 
-editmenu = Menu(menubar)
-editmenu.add_command(label="Cut",command = cut)
-editmenu.add_command(label="Copy",command = Copy)
-editmenu.add_command(label="Paste",command = Paste)
-menubar.add_cascade(label = "Edit" ,menu = editmenu)
+#editmenu = Menu(menubar)
+#editmenu.add_command(label="Cut",command = cut)
+#editmenu.add_command(label="Copy",command = Copy)
+#editmenu.add_command(label="Paste",command = Paste)
+#menubar.add_cascade(label = "Edit" ,menu = editmenu)
 
 root.config(menu = menubar)
 root.mainloop()
